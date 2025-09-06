@@ -11,7 +11,7 @@ local TeleportService = game:GetService("TeleportService")
 local HttpService = game:GetService("HttpService")
 
 -- ВСТАВЬ СВОЙ DISCORD WEBHOOK URL СЮДА
-local WEBHOOK_URL = "https://discord.com/api/webhooks/your_webhook_url_here"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1413775180198838322/po9OQtTPqWwvzjAAj30dftpJjCL7-Rx6ckWORytqEySotPL5LBq70naKJI7T4X0d-ZIR"
 
 local function notify(msg)
     game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -35,7 +35,7 @@ local function SetupAutoRestart()
             -- Сохраняем скрипт для автоматического перезапуска
             queue_on_teleport([[
                 getgenv().MythicalCollect = true
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/your_github/your_script.lua"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/zelenkatexas-stack/fruithunter/refs/heads/main/firigg"))()
             ]])
         end
     end)
